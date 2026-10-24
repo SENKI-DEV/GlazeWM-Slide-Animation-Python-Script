@@ -1,4 +1,4 @@
-# Revolver workspace switcher for GlazeWM + YASB
+# Revolver workspace switcher and Resize + Sliding Animation for GlazeWM + YASB
 
 A spinning revolver cylinder in the corner of your screen that shows your GlazeWM workspaces as
 chambers, plus the animations that go with it: windows slide out and in when you change workspace,
