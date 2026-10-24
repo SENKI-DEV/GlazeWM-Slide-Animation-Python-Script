@@ -1,0 +1,1003 @@
+2026-10-22 16:14:44,440 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:14:44,441 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:14:44,441 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:15:26,578 [INFO] [MainThread] [root/welcome.py:867]: Created config file at C:\Users\kian\.config\yasb\config.yaml
+2026-10-22 16:15:26,578 [INFO] [MainThread] [root/welcome.py:876]: Created styles file at C:\Users\kian\.config\yasb\styles.css
+2026-10-22 16:15:27,996 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:15:28,335 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-10-22 16:15:28,337 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 16:15:28,337 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:15:28,339 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:15:28,340 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:15:28,373 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:15:28,436 [INFO] [Dummy-10] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\utilities.py", line 784 in _scroll_text
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+Windows fatal exception: code 0x80010108
+
+Thread 0x000090a4 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 84 in run
+
+Thread 0x00000fe0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 2019 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 678 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\asyncio\base_events.py", line 707 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x0000881c [Thread-7] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003a34 [HotkeyListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\hotkeys.py", line 252 in run
+
+Thread 0x00009af4 [Thread-8] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d18 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00004910 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00006afc [QueryWorker] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\quick_launch\workers.py", line 61 in run
+
+Thread 0x00007720 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00005fa8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005764 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.7\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c58 (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 75 in main
+  File "main.py", line 178 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+2026-10-22 16:16:51,530 [INFO] [MainThread] [root/controller.py:43]: Exiting Application from tray...
+2026-10-22 16:16:51,638 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:16:51,725 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-10-22 16:16:51,727 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 16:16:51,729 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:16:51,729 [INFO] [Dummy-10] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:22:01,548 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:22:01,549 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:22:01,549 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:22:02,214 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:22:02,372 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-10-22 16:22:02,373 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:22:02,373 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 16:22:02,376 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:22:02,376 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:22:02,399 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:22:02,435 [INFO] [Dummy-9] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 16:22:51,063 [INFO] [CLIPipeServer] [cli_server/cli_server.py:257]: CLI server received command: stop
+2026-10-22 16:22:51,063 [INFO] [CLIPipeServer] [root/controller.py:43]: Exiting Application from CLI...
+2026-10-22 16:22:51,171 [INFO] [CLIPipeServer] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:22:51,242 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-10-22 16:22:51,244 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:22:51,244 [INFO] [Dummy-9] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:22:51,246 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 16:22:52,781 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:22:52,781 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:22:52,782 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:22:52,832 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'C:\Users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'C:\\Users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:22:53,493 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 1 monitors
+2026-10-22 16:22:53,609 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:22:53,896 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-10-22 16:22:53,897 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:22:53,899 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'c:\users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'c:\\users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:22:53,900 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:22:53,900 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:22:53,937 [INFO] [Dummy-13] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 16:22:53,944 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:23:03,084 [WARNING] [MainThread] [root/manager.py:129]: Invalid image path: {wallpaper_path}
+2026-10-22 16:23:03,085 [WARNING] [MainThread] [root/manager.py:136]: No wallpapers found in ['{wallpaper_path}']
+2026-10-22 16:25:57,370 [INFO] [CLIPipeServer] [cli_server/cli_server.py:257]: CLI server received command: stop
+2026-10-22 16:25:57,370 [INFO] [CLIPipeServer] [root/controller.py:43]: Exiting Application from CLI...
+2026-10-22 16:25:57,475 [INFO] [CLIPipeServer] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:25:57,476 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'C:\Users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'C:\\Users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:25:57,537 [ERROR] [Thread-10] [root/css_processor.py:47]: CSSProcessor Error 'c:\users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'c:\\users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:25:57,721 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-10-22 16:25:57,722 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:25:57,723 [INFO] [Dummy-13] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:25:58,647 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:25:58,648 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:25:58,648 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:25:58,703 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'C:\Users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'C:\\Users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:25:59,313 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 1 monitors
+2026-10-22 16:25:59,424 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:25:59,816 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-10-22 16:25:59,816 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:25:59,818 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'c:\users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'c:\\users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:25:59,819 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:25:59,819 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:25:59,851 [INFO] [Dummy-13] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 16:25:59,853 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:26:23,875 [INFO] [MainThread] [root/controller.py:43]: Exiting Application from tray...
+2026-10-22 16:26:23,979 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:26:24,069 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-10-22 16:26:24,070 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:26:24,070 [INFO] [Dummy-13] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:39:42,221 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:39:42,222 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:39:42,222 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:39:42,269 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'C:\Users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'C:\\Users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:39:42,814 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 1 monitors
+2026-10-22 16:39:42,909 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:39:43,072 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-10-22 16:39:43,072 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:39:43,074 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'c:\users\kian\.cache\wal\colors.css': [Errno 2] No such file or directory: 'c:\\users\\kian\\.cache\\wal\\colors.css'
+2026-10-22 16:39:43,074 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:39:43,075 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:39:43,092 [INFO] [Dummy-13] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 16:39:43,092 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:41:18,170 [INFO] [CLIPipeServer] [cli_server/cli_server.py:257]: CLI server received command: stop
+2026-10-22 16:41:18,170 [INFO] [CLIPipeServer] [root/controller.py:43]: Exiting Application from CLI...
+2026-10-22 16:41:18,277 [INFO] [CLIPipeServer] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:41:18,347 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-10-22 16:41:18,348 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:41:18,348 [INFO] [Dummy-13] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:41:19,799 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:41:19,800 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:41:19,800 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:41:20,259 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 16:41:20,375 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:41:20,418 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 16:41:20,859 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 16:41:20,869 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:41:20,870 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 16:41:20,871 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:41:20,871 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:41:20,883 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:41:20,896 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 16:41:44,493 [INFO] [MainThread] [root/controller.py:43]: Exiting Application from tray...
+2026-10-22 16:41:44,594 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:41:44,676 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:41:44,677 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:41:44,678 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 16:41:44,679 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 16:44:39,217 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:44:39,217 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:44:39,218 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:44:39,706 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 16:44:39,857 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:44:39,903 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 16:44:40,440 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 16:44:40,454 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 16:44:40,454 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:44:40,456 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:44:40,456 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:44:40,472 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:44:40,474 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 16:50:06,568 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-10-22 16:50:06,669 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 16:50:06,765 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 16:50:06,769 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 16:50:06,769 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 16:50:06,774 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 16:50:08,251 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 16:50:08,252 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 16:50:08,252 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 16:50:08,939 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 16:50:09,107 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 16:50:09,164 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 16:50:10,043 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 16:50:10,087 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 16:50:10,088 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 16:50:10,092 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 16:50:10,092 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 16:50:10,114 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 16:50:10,121 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 17:18:30,855 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-10-22 17:18:30,957 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 17:18:31,074 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 17:18:31,076 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 17:18:31,077 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 17:18:31,079 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 17:18:33,164 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 17:18:33,165 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 17:18:33,165 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 17:18:34,202 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 17:18:34,475 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 17:18:34,585 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 17:18:35,911 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 17:18:35,950 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 17:18:35,951 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 17:18:35,954 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 17:18:35,954 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 17:18:35,984 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 17:18:35,991 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 17:51:13,095 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-22 17:51:13,196 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 17:51:13,201 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-22 17:51:13,342 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 17:51:13,342 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 17:51:13,345 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 17:51:13,348 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 17:51:14,780 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 17:51:14,780 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 17:51:14,780 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 17:51:15,158 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type widgets.custom.revolver_workspaces.RevolverWorkspaceWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 43, in _build_widget
+  File "C:/Users/runneradmin/AppData/Local/pypa/cibuildwheel/Cache/nuget-cpython/python.3.14.7/tools/Lib/importlib/__init__.py", line 88, in import_module
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1314, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1314, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1335, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.widgets.widgets'
+2026-10-22 17:51:15,160 [WARNING] [MainThread] [root/grouper.py:115]: GrouperWidget failed to create child widget 'glazewm_workspaces'
+2026-10-22 17:51:15,163 [ERROR] [MainThread] [root/widget_builder.py:129]: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "widgets.custom.revolver_workspaces.RevolverWorkspaceWidget"
+2026-10-22 17:51:15,514 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 17:51:15,658 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 17:51:15,704 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 17:51:16,431 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 17:51:16,466 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 17:51:16,466 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 17:51:16,467 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 17:51:16,468 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 17:51:16,484 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 17:51:16,511 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 17:52:07,507 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-10-22 17:52:07,619 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 17:52:07,895 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 17:52:07,944 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 17:52:07,945 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 17:52:07,956 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 17:52:09,107 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 17:52:09,107 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 17:52:09,108 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 17:52:09,279 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type widgets.custom.revolver_workspaces.RevolverWorkspaceWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 43, in _build_widget
+  File "C:/Users/runneradmin/AppData/Local/pypa/cibuildwheel/Cache/nuget-cpython/python.3.14.7/tools/Lib/importlib/__init__.py", line 88, in import_module
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1314, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1314, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1335, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.widgets.widgets'
+2026-10-22 17:52:09,280 [WARNING] [MainThread] [root/grouper.py:115]: GrouperWidget failed to create child widget 'glazewm_workspaces'
+2026-10-22 17:52:09,284 [ERROR] [MainThread] [root/widget_builder.py:129]: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "widgets.custom.revolver_workspaces.RevolverWorkspaceWidget"
+2026-10-22 17:52:09,607 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 17:52:09,734 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 17:52:09,781 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 17:52:10,460 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 17:52:10,497 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 17:52:10,497 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 17:52:10,500 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 17:52:10,501 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 17:52:10,522 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 17:52:10,523 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 17:54:22,586 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-22 17:54:22,687 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 17:54:22,690 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-22 17:54:22,824 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 17:54:22,825 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 17:54:22,827 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 17:54:22,830 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 17:54:23,957 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 17:54:23,958 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 17:54:23,958 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 17:54:24,132 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type custom.revolver_workspaces.RevolverWorkspaceWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 43, in _build_widget
+  File "C:/Users/runneradmin/AppData/Local/pypa/cibuildwheel/Cache/nuget-cpython/python.3.14.7/tools/Lib/importlib/__init__.py", line 88, in import_module
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1314, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1335, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'core.widgets.custom'
+2026-10-22 17:54:24,133 [WARNING] [MainThread] [root/grouper.py:115]: GrouperWidget failed to create child widget 'glazewm_workspaces'
+2026-10-22 17:54:24,136 [ERROR] [MainThread] [root/widget_builder.py:129]: Failed to build widget(s) due to unknown widget type(s)  - glazewm_workspaces has unknown type "custom.revolver_workspaces.RevolverWorkspaceWidget"
+2026-10-22 17:54:24,498 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 17:54:24,655 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 17:54:24,704 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 17:54:25,855 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 17:54:25,890 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 17:54:25,890 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 17:54:25,892 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 17:54:25,892 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 17:54:25,907 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 17:54:25,910 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 17:56:46,925 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-22 17:56:47,036 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 17:56:47,044 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-22 17:56:47,168 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 17:56:47,168 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 17:56:47,171 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 17:56:47,181 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 17:56:48,269 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 17:56:48,270 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 17:56:48,270 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 17:56:48,898 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 17:56:49,120 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 17:56:49,216 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 17:56:50,099 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 17:56:50,115 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 17:56:50,116 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 17:56:50,117 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 17:56:50,117 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 17:56:50,133 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 17:56:50,137 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 17:58:01,732 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: mapping values are not allowed here
+  in "C:\Users\kian\.config\yasb\config.yaml", line 2, column 12
+2026-10-22 17:58:33,300 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-10-22 17:58:33,416 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 17:58:33,561 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 17:58:33,561 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 17:58:33,565 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 17:58:33,568 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 17:58:34,523 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 17:58:34,535 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 17:58:34,541 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 17:58:35,171 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 17:58:35,294 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 17:58:35,341 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 17:58:35,830 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 17:58:35,849 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 17:58:35,849 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 17:58:35,876 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 17:58:35,876 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 17:58:35,894 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 17:58:35,904 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 18:01:57,886 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-22 18:01:58,004 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 18:01:58,011 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-22 18:01:58,128 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 18:01:58,134 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 18:01:58,137 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 18:01:58,141 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 18:01:59,130 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 18:01:59,130 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 18:01:59,131 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 18:01:59,682 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 18:01:59,822 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 18:01:59,877 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 18:02:00,741 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 18:02:00,757 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 18:02:00,757 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 18:02:00,758 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 18:02:00,758 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 18:02:00,772 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 18:02:00,776 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 18:59:58,414 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-22 18:59:58,525 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 18:59:58,532 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-22 18:59:58,804 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 18:59:58,805 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 18:59:58,806 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 18:59:58,809 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 19:00:00,037 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 19:00:00,038 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 19:00:00,038 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 19:00:00,498 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 19:00:00,626 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 19:00:00,670 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 19:00:01,523 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 19:00:01,553 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 19:00:01,553 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 19:00:01,554 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 19:00:01,555 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 19:00:01,571 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 19:00:01,596 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 19:15:40,099 [INFO] [MainThread] [root/controller.py:43]: Exiting Application from tray...
+2026-10-22 19:15:40,200 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 19:15:40,439 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 19:15:40,440 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 19:15:40,446 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 19:15:40,449 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 19:16:11,928 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 19:16:11,928 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 19:16:11,929 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 19:16:12,071 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] ActiveWindowConfig: 'animation' - Use CSS animations instead.
+2026-10-22 19:16:12,071 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] ActiveWindowConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-10-22 19:16:12,077 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] AnimationConfig: 'type' - Animation type is no longer supported in TaskbarWidget, remove it from your config.
+2026-10-22 19:16:12,358 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 19:16:12,483 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 19:16:12,526 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 19:16:13,173 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 19:16:13,198 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 19:16:13,198 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 19:16:13,200 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 19:16:13,200 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 19:16:13,212 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 19:16:13,223 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-22 19:28:40,204 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-10-22 19:28:40,305 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-10-22 19:28:40,309 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-10-22 19:28:40,424 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-22 19:28:40,428 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-22 19:28:40,429 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-22 19:28:40,434 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-22 19:28:41,293 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-22 19:28:41,294 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-22 19:28:41,294 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-22 19:28:41,460 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] ActiveWindowConfig: 'animation' - Use CSS animations instead.
+2026-10-22 19:28:41,460 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] ActiveWindowConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-10-22 19:28:41,468 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] AnimationConfig: 'type' - Animation type is no longer supported in TaskbarWidget, remove it from your config.
+2026-10-22 19:28:41,769 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-22 19:28:41,893 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-22 19:28:41,937 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-22 19:28:42,545 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-22 19:28:42,575 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-22 19:28:42,576 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-22 19:28:42,577 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-22 19:28:42,577 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-22 19:28:42,590 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-22 19:28:42,594 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-23 19:00:57,148 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-10-23 19:00:57,169 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-10-23 19:00:57,173 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-10-23 19:00:57,177 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-10-23 19:02:34,284 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-23 19:02:34,285 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-23 19:02:34,286 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-23 19:02:34,506 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] ActiveWindowConfig: 'animation' - Use CSS animations instead.
+2026-10-23 19:02:34,506 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] ActiveWindowConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-10-23 19:02:34,515 [WARNING] [MainThread] [deprecation/deprecation.py:161]: [DEPRECATED] AnimationConfig: 'type' - Animation type is no longer supported in TaskbarWidget, remove it from your config.
+2026-10-23 19:02:34,961 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-10-23 19:02:35,157 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-10-23 19:02:35,210 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-10-23 19:02:35,363 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-10-23 19:02:35,387 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-10-23 19:02:35,387 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-10-23 19:02:35,388 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kian\.config\yasb
+2026-10-23 19:02:35,389 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-10-23 19:02:35,404 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-10-23 19:02:35,432 [INFO] [Dummy-7] [root/windows_notification.py:161]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-10-23 19:03:12,341 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-10-23 19:03:12,341 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-10-23 19:03:12,341 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-10-23 19:03:12,342 [ERROR] [MainThread] [root/main.py:46]: Another instance of the YASB is already running.

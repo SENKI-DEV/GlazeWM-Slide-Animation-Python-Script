@@ -1,0 +1,43 @@
+{
+  "chambers": 6,
+  "bar_margin": 0,
+  "bar_height": 36,
+  "flat_cut": false,
+  "pill_height": 24,
+  "chamber_size": 22,
+  "base_scale": 1.4,
+  "gap": 4,
+  "radius": 90,
+  "accent_color": "#ffe25d04",
+  "chamber_color": "#45475a",
+  "chamber_rim_color": "#fffafafa",
+  "text_color": "#fff4f4f4",
+  "body_color": [
+    17,
+    18,
+    19,
+    255
+  ],
+  "border_color": [
+    69,
+    71,
+    90,
+    255
+  ],
+  "hide_in_fullscreen": true,
+  "port": 6123,
+  "slide_port": 48721,
+  "spin_ms": 520,
+  "extra_spins": 1,
+  "long_spin_min_distance": 2,
+  "spin_ms_per_extra": 450,
+  "settle_overshoot_deg": 12,
+  "hover_pop": true,
+  "sound": true,
+  "sound_volume": 0.6,
+  "pop_scale": 5.0,
+  "pop_grow_ms": 150,
+  "pop_shrink_ms": 280,
+  "workspace_names": null,
+  "font": "JetBrainsMono NFP"
+}

@@ -1,0 +1,56 @@
+1792819644.411 slide flag seen via event
+1792819645.226 reconcile check starting
+1792819645.227 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': True, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'shown', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top': 
+1792819645.227 reconcile: 1 windows, 0 to fix []
+1792819650.998 slide flag seen via event
+1792819651.819 reconcile check starting
+1792819651.821 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819651.821 reconcile: 1 windows, 0 to fix []
+1792819654.677 anim 0x1c0800 (17, 55, 1903, 1063) -> (17, 55, 956, 1063) (snap)
+1792819655.077 reconcile check starting
+1792819655.097 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819655.098 reconcile: 2 windows, 0 to fix []
+1792819670.939 slide flag seen via event
+1792819671.832 reconcile check starting
+1792819671.833 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': True, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'shown', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top': 
+1792819671.833 reconcile: 1 windows, 0 to fix []
+1792819674.920 slide flag seen via event
+1792819675.757 reconcile check starting
+1792819675.758 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819675.759 reconcile: 2 windows, 0 to fix []
+1792819685.983 slide flag seen via event
+1792819686.854 reconcile check starting
+1792819686.855 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': True, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'shown', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top': 
+1792819686.856 reconcile: 1 windows, 0 to fix []
+1792819691.916 slide flag seen via event
+1792819692.798 reconcile check starting
+1792819692.800 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819692.800 reconcile: 2 windows, 0 to fix []
+1792819745.735 slide flag seen via event
+1792819746.640 reconcile check starting
+1792819746.641 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': True, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'shown', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top': 
+1792819746.641 reconcile: 1 windows, 0 to fix []
+1792819763.361 slide flag seen via event
+1792819764.204 reconcile check starting
+1792819764.205 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819764.206 reconcile: 2 windows, 0 to fix []
+1792819788.830 anim 0x1c0800 (17, 55, 956, 1063) -> (17, 55, 1903, 1063) (snap)
+1792819789.191 reconcile check starting
+1792819789.199 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819789.199 reconcile: 1 windows, 0 to fix []
+1792819791.153 reconcile check starting
+1792819791.155 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819791.156 reconcile: 1 windows, 0 to fix []
+1792819795.936 anim 0x1c0800 (17, 55, 1903, 1063) -> (17, 55, 956, 1063) (snap)
+1792819796.301 reconcile check starting
+1792819796.305 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819796.305 reconcile: 2 windows, 0 to fix []
+1792819826.169 anim 0x1c0800 (17, 55, 958, 1063) -> (17, 55, 1903, 1063) (snap)
+1792819826.536 reconcile check starting
+1792819826.541 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': False, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'hidden', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top'
+1792819826.541 reconcile: 1 windows, 0 to fix []
+1792819831.328 slide flag seen via event
+1792819832.013 reconcile check starting
+1792819832.014 reconcile: sample window from GlazeWM: {'type': 'window', 'id': '1f671b57-d0c8-45fb-b20b-346d918b2aee', 'parentId': '3796031d-23d9-4e0f-96c0-ac524dd403f2', 'hasFocus': True, 'tilingSize': 1.0, 'width': 1870, 'height': 1000, 'x': 25, 'y': 55, 'state': {'type': 'tiling'}, 'prevState': {'type': 'fullscreen', 'maximized': False, 'shownOnTop': False}, 'displayState': 'shown', 'borderDelta': {'left': {'amount': 0.0, 'unit': 'pixel'}, 'top': 
+1792819832.014 reconcile: 1 windows, 0 to fix []
+1792819835.822 reconcile check starting

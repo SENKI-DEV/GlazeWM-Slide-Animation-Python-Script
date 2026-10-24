@@ -1,0 +1,21 @@
+[2m2026-10-20T15:33:34.013253Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T12:47:44.910816Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T12:53:26.820207Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T17:12:40.626955Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T17:16:44.670014Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T17:25:06.317623Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T17:28:22.197048Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 9 column 3, while parsing a block mapping at line 6 column 2
+[2m2026-10-21T17:28:56.970131Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-21T17:35:34.843992Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-10-22T17:27:08.792816Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.486877Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487019Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487097Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487221Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487279Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487347Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487468Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487525Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487632Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T07:30:00.487694Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-10-23T11:03:34.979037Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Platform error: Another instance of the application is already running.
